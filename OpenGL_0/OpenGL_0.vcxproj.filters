@@ -30,19 +30,28 @@
     <ClCompile Include="shaderClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vertexBufferObject.cpp">
+    <ClCompile Include="vbo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vertexArrayObject.cpp">
+    <ClCompile Include="vao.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="elementsBufferObject.cpp">
+    <ClCompile Include="ebo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meshFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,16 +62,25 @@
     <ClInclude Include="shaderClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vertexBufferObject.h">
+    <ClInclude Include="vbo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vertexArrayObject.h">
+    <ClInclude Include="vao.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="elementsBufferObject.h">
+    <ClInclude Include="ebo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -81,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\TestTexture.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\Desktop\Placeholder.jpg">
       <Filter>Resource Files\Textures</Filter>
     </Image>
   </ItemGroup>
