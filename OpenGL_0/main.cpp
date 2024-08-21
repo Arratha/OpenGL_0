@@ -42,7 +42,7 @@ int main()
 	glfwSetFramebufferSizeCallback(window, FrameBufferSizeCallback);
 
 
-	Mesh cube = MeshFactory::CreateDefaultCube();
+	Mesh cube = MeshFactory::CreateDefaultModel();
 
 	Shader shaderProgram("default.vert", "default.frag");
 
@@ -64,7 +64,7 @@ int main()
 
 		camera.Inputs(window);
 
-		camera.UpdateMatrix(45.0f, 0.1f, 100.0f);
+		camera.UpdateMatrix(45.0f, 0.1f, 1000.0f);
 		cube.Draw(shaderProgram, camera);
 
 		//Swap buffer and poll events (who would have guess?)

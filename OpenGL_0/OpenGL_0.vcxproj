@@ -185,6 +185,11 @@
     <Image Include="..\..\..\..\..\Desktop\Placeholder.jpg" />
     <Image Include="..\TestTexture.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="TestModel.obj">
+      <FileType>Document</FileType>
+    </Text>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
