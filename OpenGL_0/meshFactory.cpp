@@ -117,14 +117,9 @@ Mesh MeshFactory::CreateDefaultModel()
 	vn.reserve(normalCount);
 	vertices.reserve(facesCount);
 
-	int lineIndex = 0;
-
 	file.open(fileName);
 	while (std::getline(file, line))
 	{
-		std::cout << lineIndex << " " << line << std::endl;
-		lineIndex++;
-
 		splittedLine = Split(line, " ");
 
 		if (!splittedLine[0].compare("v"))
@@ -156,8 +151,7 @@ Mesh MeshFactory::CreateDefaultModel()
 	}
 	file.close();
 
-	//I don't understand how I can get indices for obj
-	//Things should be better with them
+	//Get indices using map
 	std::vector<GLuint> indices;
 
 	std::vector<Texture> textures = {
